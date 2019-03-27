@@ -213,12 +213,14 @@ fn run() -> Result<(), MyError> {
             Ok(n) => n,
             Err(_) => {
                 if args.flag_bytes {
-                    reader.byte_headers()?
+                    reader
+                        .byte_headers()?
                         .iter()
                         .position(|x| x == column_str.as_bytes())
                         .ok_or(MyError::ColumnNotFound)?
                 } else {
-                    reader.headers()?
+                    reader
+                        .headers()?
                         .iter()
                         .position(|x| x == column_str)
                         .ok_or(MyError::ColumnNotFound)?

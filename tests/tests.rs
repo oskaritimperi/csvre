@@ -147,7 +147,6 @@ ipsum;dolor;sit
     );
 }
 
-
 #[test]
 fn byte_mode() {
     let output = command(

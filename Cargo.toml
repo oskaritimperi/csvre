@@ -4,6 +4,12 @@ version = "0.1.0"
 authors = ["Oskari Timperi <oskari.timperi@iki.fi>"]
 edition = "2018"
 license = "GPL-3.0-or-later"
+description = "A simple tool for replacing data in CSV columns with regular expressions."
+readme = "README.md"
+homepage = "https://github.com/oswjk/csvre"
+repository = "https://github.com/oswjk/csvre"
+keywords = ["csv", "command", "regex"]
+categories = ["command-line-utilities", "text-processing"]
 
 [dependencies]
 csv = "1"
